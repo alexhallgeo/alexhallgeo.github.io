@@ -3,69 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Alex Hall | High-Latitude Dust & Remote Sensing Researcher</title>
+
   <meta name="description" content="Alex Hall — PhD Researcher in High-Latitide Dust and Remote Sensing at Loughborough University. Research in geomorphology, remote sensing, polar environments, and high-latitude dust emissions.">
+
   <meta name="keywords" content="Alex Hall, Arctic dust, aeolian processes, geomorphology, Greenland dust, remote sensing, Loughborough University, geography researcher">
+
   <meta name="author" content="Alex Hall">
+
   <meta name="google-site-verification" content="vMnFyucnmA4LpogMIAjGMIyJq43s7O92oNO3VlGl9dY" />
+
   <style>
-*, *::before, *::after {
+
+	*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
+
     :root {
-      --text: #1c1c1c;
-      --muted: #555;
-      --border: #e0e0e0;
-      --link: #1a6496;
-      --bg: #ffffff;
+      --text:    #1c1c1c;
+      --muted:   #555;
+      --border:  #e0e0e0;
+      --link:    #1a6496;
+      --bg:      #ffffff;
       --sidebar: #f8f8f8;
-      --max: 900px;
+      --max:     900px;
     }
 
-    /* Dark Mode */
     [data-theme="dark"] {
-      --text: #e0e0e0;
-      --muted: #aaaaaa;
-      --border: #444;
-      --link: #4a9eff;
-      --bg: #1a1a1a;
-      --sidebar: #252525;
+      --text:    #e0e0e0;
+      --muted:   #a0a0a0;
+      --border:  #333;
+      --link:    #5ba8d8;
+      --bg:      #1a1a1a;
+      --sidebar: #242424;
     }
 
     html { font-size: 16px; }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.6;
-      transition: background 0.3s, color 0.3s;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
+
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Theme Toggle Button */
+    /* ── theme toggle ── */
     .theme-toggle {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
       background: var(--sidebar);
       border: 1px solid var(--border);
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.35rem;
+      border-radius: 4px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+      color: var(--text);
       cursor: pointer;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-      transition: all 0.3s;
+      transition: all 0.2s ease;
     }
+
     .theme-toggle:hover {
-      transform: scale(1.1);
+      background: var(--bg);
+      border-color: var(--link);
     }
 
     /* ── layout ── */
@@ -78,6 +85,7 @@
       gap: 0;
       min-height: 100vh;
     }
+
     /* ── sidebar ── */
     aside {
       background: var(--sidebar);
@@ -88,18 +96,21 @@
       height: 100vh;
       overflow-y: auto;
     }
+
     .profile-name {
       font-size: 1.15rem;
       font-weight: 600;
       margin-bottom: .2rem;
       line-height: 1.3;
     }
+
     .profile-role {
       font-size: .82rem;
       color: var(--muted);
       margin-bottom: 1.4rem;
       line-height: 1.4;
     }
+
     .profile-inst {
       font-size: .8rem;
       color: var(--muted);
@@ -107,13 +118,16 @@
       padding-bottom: 1.5rem;
       border-bottom: 1px solid var(--border);
     }
+
     nav ul {
       list-style: none;
       margin-bottom: 2rem;
     }
+
     nav ul li {
       margin-bottom: .1rem;
     }
+
     nav ul li a {
       display: block;
       font-size: .85rem;
@@ -121,14 +135,17 @@
       padding: .3rem 0;
       transition: color .15s;
     }
+
     nav ul li a:hover {
       color: var(--link);
       text-decoration: none;
     }
+
     .sidebar-links {
       border-top: 1px solid var(--border);
       padding-top: 1.5rem;
     }
+
     .sidebar-links a {
       display: block;
       font-size: .8rem;
@@ -136,30 +153,37 @@
       margin-bottom: .5rem;
       transition: color .15s;
     }
+
     .sidebar-links a:hover { color: var(--link); text-decoration: none; }
+
     .sidebar-links .icon {
       display: inline-block;
       width: 1.1em;
       opacity: .6;
     }
+
     /* ── main content ── */
     main {
       padding: 2.5rem 2.5rem 4rem;
     }
+
     /* ── sections ── */
     .section {
       margin-bottom: 3rem;
       padding-bottom: 3rem;
       border-bottom: 1px solid var(--border);
     }
+
     .section:last-child {
       border-bottom: none;
     }
+
     h1 {
       font-size: 1.6rem;
       font-weight: 600;
       margin-bottom: .5rem;
     }
+
     h2 {
       font-size: 1.05rem;
       font-weight: 600;
@@ -168,32 +192,40 @@
       border-bottom: 1px solid var(--border);
       color: var(--text);
     }
+
     p {
       font-size: .92rem;
       color: var(--text);
       margin-bottom: .8rem;
     }
+
     p:last-child { margin-bottom: 0; }
+
     /* ── intro block ── */
     .intro-title {
       font-size: 1.5rem;
       font-weight: 600;
       margin-bottom: .3rem;
     }
+
     .intro-sub {
       font-size: .95rem;
       color: var(--muted);
       margin-bottom: 1.2rem;
     }
+
     /* ── publications ── */
     .pub-list { list-style: none; }
+
     .pub-list li {
       font-size: .9rem;
       padding: .9rem 0;
       border-bottom: 1px solid var(--border);
       line-height: 1.55;
     }
+
     .pub-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
     .pub-authors { color: var(--muted); }
     .pub-title { font-weight: 500; }
     .pub-journal { font-style: italic; }
@@ -206,7 +238,17 @@
       padding: 2px 7px;
       border-radius: 3px;
     }
+
+    [data-theme="dark"] .pub-links a {
+      background: #1e3a4a;
+    }
+
     .pub-links a:hover { background: #d0e8f5; text-decoration: none; }
+
+    [data-theme="dark"] .pub-links a:hover {
+      background: #2a4f65;
+    }
+
     .pub-badge {
       display: inline-block;
       font-size: .72rem;
@@ -218,8 +260,14 @@
       font-weight: 500;
       vertical-align: middle;
     }
+
+    [data-theme="dark"] .pub-badge {
+      background: #333;
+    }
+
     /* ── experience / timeline ── */
     .exp-list { list-style: none; }
+
     .exp-list li {
       display: grid;
       grid-template-columns: 9rem 1fr;
@@ -228,30 +276,37 @@
       border-bottom: 1px solid var(--border);
       font-size: .9rem;
     }
+
     .exp-list li:last-child { border-bottom: none; }
+
     .exp-date {
       color: var(--muted);
       font-size: .82rem;
       padding-top: .1rem;
       line-height: 1.45;
     }
+
     .exp-body h3 {
       font-size: .9rem;
       font-weight: 600;
       margin-bottom: .1rem;
     }
+
     .exp-body .org {
       font-size: .82rem;
       color: var(--muted);
       margin-bottom: .3rem;
     }
+
     .exp-body p {
       font-size: .85rem;
       color: var(--muted);
       margin: 0;
     }
+
     /* ── awards ── */
     .award-list { list-style: none; }
+
     .award-list li {
       display: grid;
       grid-template-columns: 9rem 1fr;
@@ -260,23 +315,29 @@
       border-bottom: 1px solid var(--border);
       font-size: .9rem;
     }
+
     .award-list li:last-child { border-bottom: none; }
+
     .award-amount {
-    color: var(--muted);
-   font-size: .82rem;
-   padding-top: .1rem;
-   line-height: 1.45;
-}
+ 	 	color: var(--muted);
+  		font-size: .82rem;
+  		padding-top: .1rem;
+  		line-height: 1.45;
+	}
+
     .award-body { font-size: .88rem; }
     .award-body .org { color: var(--muted); font-size: .82rem; }
-.award-body h3 {
-  font-size: .9rem;
-  font-weight: 600;
-  margin-bottom: .1rem;
-}
- 
+
+	.award-body h3 {
+	  font-size: .9rem;
+	  font-weight: 600;
+	  margin-bottom: .1rem;
+	}
+
+	  
     /* ── education ── */
     .edu-list { list-style: none; }
+
     .edu-list li {
       display: grid;
       grid-template-columns: 9rem 1fr;
@@ -285,17 +346,22 @@
       border-bottom: 1px solid var(--border);
       font-size: .9rem;
     }
+
     .edu-list li:last-child { border-bottom: none; }
+
     .edu-year { color: var(--muted); font-size: .82rem; padding-top: .1rem; }
+
     .edu-body h3 { font-size: .9rem; font-weight: 600; margin-bottom: .1rem; }
     .edu-body .inst { color: var(--muted); font-size: .82rem; margin-bottom: .2rem; }
     .edu-body p { font-size: .85rem; color: var(--muted); margin: 0; }
+
     /* ── skills ── */
     .skills-row {
       display: flex;
       flex-wrap: wrap;
       gap: .4rem;
     }
+
     .skill {
       font-size: .8rem;
       border: 1px solid var(--border);
@@ -304,8 +370,14 @@
       color: var(--muted);
       background: #fafafa;
     }
+
+    [data-theme="dark"] .skill {
+      background: #2a2a2a;
+    }
+
     /* ── conferences ── */
     .conf-list { list-style: none; }
+
     .conf-list li {
       display: grid;
       grid-template-columns: 3.5rem 1fr;
@@ -314,7 +386,9 @@
       border-bottom: 1px solid var(--border);
       font-size: .88rem;
     }
+
     .conf-list li:last-child { border-bottom: none; }
+
     .conf-year { color: var(--muted); font-size: .82rem; padding-top: .05rem; }
     .conf-body { line-height: 1.5; }
     .conf-venue { color: var(--muted); font-size: .8rem; }
@@ -328,9 +402,15 @@
       margin-left: .3rem;
       vertical-align: middle;
     }
+
+    [data-theme="dark"] .conf-type-badge {
+      border-color: #555;
+    }
+
     /* ── contact ── */
     .contact-row { font-size: .9rem; margin-bottom: .5rem; }
     .contact-row span { color: var(--muted); display: inline-block; width: 7rem; font-size: .85rem; }
+
     /* ── responsive ── */
     @media (max-width: 680px) {
       .wrap { grid-template-columns: 1fr; }
@@ -345,16 +425,28 @@
       .edu-list li,
       .conf-list li { grid-template-columns: 1fr; gap: .2rem; }
       .exp-date, .award-amount, .edu-year, .conf-year { font-size: .78rem; }
+      
+      .theme-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+      }
     }
   </style>
 </head>
 <body>
+
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">Dark Mode</button>
+
 <div class="wrap">
+
   <!-- SIDEBAR -->
   <aside>
     <div class="profile-name">Alex Hall</div>
     <div class="profile-role">PhD Researcher<br>High-Latitude Dust &amp; Remote Sensing</div>
     <div class="profile-inst">Geography &amp; Environment<br>Loughborough University</div>
+
     <nav>
       <ul>
         <li><a href="#publications">Publications</a></li>
@@ -366,6 +458,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <div class="sidebar-links">
       <a href="https://scholar.google.com/citations?hl=en&user=rQBoHD0AAAAJ" target="_blank" rel="noopener">
         <span class="icon">📄</span> Google Scholar
@@ -381,16 +474,20 @@
       </a>
     </div>
   </aside>
+
   <!-- MAIN -->
   <main>
+
   <h1>Alex Hall</h1>
   <p class="intro-sub">
     PhD Researcher in High-Latitude Dust & Remote Sensing
   </p>
+
   <!-- PUBLICATIONS -->
   <section class="section" id="publications">
       <h2>Publications</h2>
       <ul class="pub-list">
+
         <li>
           <div class="pub-authors">Baddock, M., <strong>Hall, A.</strong>, Rideout, J., Bryant, R., Bullard, J. &amp; Gassó, S.</div>
           <div class="pub-title">Satellite observations of Arctic blowing dust events &gt;82°N</div>
@@ -399,6 +496,7 @@
             <a href="https://doi.org/10.1002/wea.7617" target="_blank" rel="noopener">DOI</a>
           </div>
         </li>
+
         <li>
           <div class="pub-authors">Dingle, E.H., Baynes, E.R.C., <strong>Hall, A.</strong> &amp; Warburton, J.</div>
           <div class="pub-title">Erosion dynamics in carbonate bedrock channels inhibit weathering processes</div>
@@ -407,12 +505,16 @@
             <a href="https://doi.org/10.1002/esp.70067" target="_blank" rel="noopener">DOI</a>
           </div>
         </li>
+
+
       </ul>
     </section>
+
     <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <h2>Experience</h2>
       <ul class="exp-list">
+
         <li>
           <div class="exp-date">2025 – present</div>
           <div class="exp-body">
@@ -421,6 +523,7 @@
             <p>Funded by the Prince Albert II of Monaco Foundation.</p>
           </div>
         </li>
+
         <li>
           <div class="exp-date">2024 – present</div>
           <div class="exp-body">
@@ -429,6 +532,7 @@
             <p>Graduate Student Scholarship &amp; Honorarium position; membership, and website.</p>
           </div>
         </li>
+
         <li>
           <div class="exp-date">2024 – present</div>
           <div class="exp-body">
@@ -437,7 +541,7 @@
             <p>GIS, remote sensing, aeolian processes, earth surface processes, and field courses.</p>
           </div>
         </li>
-       
+        
         <li>
           <div class="exp-date">2023 – 2024</div>
           <div class="exp-body">
@@ -446,6 +550,7 @@
             <p>GIS, remote sensing, earth surface processes, and Portugal field course.</p>
           </div>
         </li>
+
         <li>
           <div class="exp-date">2023</div>
           <div class="exp-body">
@@ -454,6 +559,7 @@
             <p>Chemical erosion signatures at Moor House, North Pennines.</p>
           </div>
         </li>
+
         <li>
           <div class="exp-date">2022</div>
           <div class="exp-body">
@@ -462,6 +568,7 @@
             <p>Satellite-derived dataset of high-latitude dust sources in Alaska and Greenland (Sentinel-2, Sentinel-3, Planet, MODIS).</p>
           </div>
         </li>
+
         <li>
           <div class="exp-date">2021 – 2023</div>
           <div class="exp-body">
@@ -470,13 +577,15 @@
             <p>Website, social media, editing</p>
           </div>
         </li>
-       
+        
       </ul>
     </section>
+
     <!-- AWARDS -->
     <section class="section" id="awards">
       <h2>Awards &amp; Funding</h2>
       <ul class="award-list">
+
         <li>
           <div class="award-amount">2026</div>
           <div class="award-body">
@@ -485,6 +594,7 @@
             <p>Travel support award for participation in the International Conference on Aeolian Research (ICAR).</p>
           </div>
         </li>
+
         <li>
           <div class="award-amount">2025</div>
           <div class="award-body">
@@ -493,6 +603,7 @@
             <p>Funding awarded for the project <em>Seeing the Unseen: Svalbard Airborne Particle Emissions, Calibration and Transport (SUSPECT)</em>.</p>
           </div>
         </li>
+
         <li>
           <div class="award-amount">2025</div>
           <div class="award-body">
@@ -501,6 +612,7 @@
             <p>Travel bursary supporting attendance at Greenland Science Week 2025.</p>
           </div>
         </li>
+
         <li>
           <div class="award-amount">2024</div>
           <div class="award-body">
@@ -509,12 +621,15 @@
             <p>Recognised for undergraduate dissertation: <em>An investigation into physical and chemical erosion in bedrock rivers at Moor House</em>.</p>
           </div>
         </li>
+
       </ul>
     </section>
+
     <!-- EDUCATION -->
     <section class="section" id="education">
       <h2>Education</h2>
       <ul class="edu-list">
+
         <li>
           <div class="edu-year">2024 – present</div>
           <div class="edu-body">
@@ -522,14 +637,16 @@
             <div class="inst">Loughborough University</div>
           </div>
         </li>
+
         <li>
           <div class="edu-year">2023 – 2024</div>
           <div class="edu-body">
             <h3>MSc, Geography (By Thesis)</h3>
             <div class="inst">Durham University</div>
-   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rQBoHD0AAAAJ&citation_for_view=rQBoHD0AAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener">E-Theses</a>
+			   <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rQBoHD0AAAAJ&citation_for_view=rQBoHD0AAAAJ:d1gkVwhDpl0C" target="_blank" rel="noopener">E-Theses</a>
           </div>
         </li>
+
         <li>
           <div class="edu-year">2020 – 2023</div>
           <div class="edu-body">
@@ -537,8 +654,10 @@
             <div class="inst">Loughborough University</div>
           </div>
         </li>
+
       </ul>
     </section>
+
     <!-- SKILLS -->
     <section class="section" id="skills">
       <h2>Methods &amp; Tools</h2>
@@ -550,62 +669,71 @@
         <span class="skill">Remote Sensing</span>
       </div>
     </section>
+
     <!-- PRESENTATIONS -->
     <section class="section" id="talks">
       <h2>Presentations</h2>
       <ul class="conf-list">
+
         <li>
           <div class="conf-year">2026</div>
           <div class="conf-body">
             Linking Glaciofluvial Hydrology and Dust Emission in Greenland <span class="conf-type-badge">Oral</span> <span class="conf-type-badge">Presenter</span>
             <div class="conf-venue">High Latitude Dust Workshop · Reykjavík, Iceland</div>
-    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
+	    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
           </div>
         </li>
+
         <li>
           <div class="conf-year">2025</div>
           <div class="conf-body">
             Controls on high-latitude dust: fluvial–aeolian interactions in Greenland <span class="conf-type-badge">Poster</span> <span class="conf-type-badge">Presenter</span>
             <div class="conf-venue">UK Arctic Science Conference · Northumbria University</div>
-    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
+	    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
           </div>
         </li>
+
         <li>
           <div class="conf-year">2025</div>
           <div class="conf-body">
             Arctic dust from above and below: constraining the unseen contributions of northern high-latitude dust sources <span class="conf-type-badge">Oral</span> <span class="conf-type-badge">Presenter</span>
             <div class="conf-venue">Loughborough Geography &amp; Environment Doctoral Research Day</div>
-    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
+	    <div class="conf-venue"><strong>Hall, A.</strong>, Baddock, M., Bullard, J. </div>
           </div>
         </li>
+
         <li>
           <div class="conf-year">2023</div>
           <div class="conf-body">
             Location, timing and trajectory of dust emissions from ice-free Greenland <span class="conf-type-badge">Oral</span> <span class="conf-type-badge">Co-author</span>
             <div class="conf-venue">UK Arctic Science Meeting · Cambridge, UK</div>
-    <div class="conf-venue">Bullard, J., Baddock, M., <strong>Hall, A.</strong>, Rideout, J., Bryant, R. and Gasso, S.</div>
+	    <div class="conf-venue">Bullard, J., Baddock, M., <strong>Hall, A.</strong>, Rideout, J., Bryant, R. and Gasso, S.</div>
           </div>
       </li>
+
       <li>
           <div class="conf-year">2023</div>
           <div class="conf-body">
             Location, timing and trajectory of dust emissions from ice-free Greenland <span class="conf-type-badge">Oral</span> <span class="conf-type-badge">Co-author</span>
             <div class="conf-venue">ESA Fluvial-Aeolian Interactions on Planetary Surfaces (FAIRPLAY) Conference · Noordwijk, Netherlands</div>
-    <div class="conf-venue">Bullard, J., Baddock, M., <strong>Hall, A.</strong>, Rideout, J., Bryant, R. and Gasso, S.</div>
+	    <div class="conf-venue">Bullard, J., Baddock, M., <strong>Hall, A.</strong>, Rideout, J., Bryant, R. and Gasso, S.</div>
           </div>
       </li>
-     
+      
       <li>
           <div class="conf-year">2023</div>
           <div class="conf-body">
             Constraining dust sources in Greenland with Sentinel-2 <span class="conf-type-badge">Poster</span> <span class="conf-type-badge">Co-author</span>
             <div class="conf-venue">11th International Conference on Aeolian Research (ICAR11) · Las Cruces, New Mexico, USA</div>
-    <div class="conf-venue">Baddock M., <strong>Hall, A.</strong>, Rideout J., Bryant R., Gasso S. and Bullard J.</div>
+	    <div class="conf-venue">Baddock M., <strong>Hall, A.</strong>, Rideout J., Bryant R., Gasso S. and Bullard J.</div>
           </div>
       </li>
-       
+
+
+        
       </ul>
     </section>
+
     <!-- CONTACT -->
     <section class="section" id="contact">
       <h2>Contact</h2>
@@ -614,35 +742,31 @@
       <div class="contact-row"><span>ORCID</span> <a href="https://orcid.org/0009-0004-8857-7222" target="_blank" rel="noopener">0009-0004-8857-7222</a></div>
       <div class="contact-row"><span>Institution</span> <a href="https://www.lboro.ac.uk/subjects/geography-environment/staff/alex-g-hall/" target="_blank" rel="noopener">Loughborough University</a></div>
       <div class="contact-row"><span>Repository</span> <a href="https://repository.lboro.ac.uk/authors/Alex_Hall/19528300" target="_blank" rel="noopener">LU Repository</a></div>
-</section>
+	
+	</section>
+
   </main>
 </div>
 
-  <!-- Dark Mode Toggle -->
-  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+<script>
+  // Theme toggle functionality
+  const themeToggle = document.getElementById('themeToggle');
+  const htmlElement = document.documentElement;
+  
+  // Check for saved theme preference or default to light mode
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  htmlElement.setAttribute('data-theme', currentTheme);
+  themeToggle.textContent = currentTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  });
+</script>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-
-    // Load saved preference
-    if (localStorage.getItem('theme') === 'dark' || 
-        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      html.setAttribute('data-theme', 'dark');
-      toggle.textContent = '☀️';
-    }
-
-    toggle.addEventListener('click', () => {
-      if (html.getAttribute('data-theme') === 'dark') {
-        html.removeAttribute('data-theme');
-        toggle.textContent = '🌙';
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        toggle.textContent = '☀️';
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-  </script>
 </body>
 </html>
