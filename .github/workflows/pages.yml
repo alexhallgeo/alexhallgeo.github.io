@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Website
 
 on:
   push:
@@ -10,32 +10,21 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout files
-        uses: actions/checkout@v4
-
-      - name: Setup Jekyll
-        uses: actions/jekyll-build-pages@v1
-
-      - name: Upload files
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site          # Jekyll builds here
-
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy
+      - name: Get files
+        uses: actions/checkout@v4
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .     # Use all files in the main folder
+
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
